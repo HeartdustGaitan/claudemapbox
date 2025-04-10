@@ -1,0 +1,100 @@
+/* Asegúrate de que el mapa ocupe toda la pantalla */
+#map {
+    width: 100%;
+    height: 100%; /* O utiliza un valor diferente si quieres menos altura */
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+}
+
+.form-container {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input, select, button {
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+button {
+    background: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+/* Estilo para el formulario de emergencias */
+#emergency-form-container {
+    position: absolute;
+    bottom: 20px;
+    right: 80px;
+    background: white;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    z-index: 1000; /* Asegura que el formulario esté encima del mapa */
+    max-width: 300px;
+}
+
+#emergency-form-container h2 {
+    margin-top: 0;
+}
+
+#emergency-form-container label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+#emergency-form-container input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+#emergency-form-container button {
+    display: inline-block;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#emergency-form-container button:hover {
+    background-color: #0056b3;
+}
+
